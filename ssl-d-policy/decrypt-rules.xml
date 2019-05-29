@@ -1,0 +1,35 @@
+ <entry name="Safe-Decrypt">
+          <category>
+            <member>dynamic-dns</member>
+            <member>insufficient-content</member>
+            <member>not-resolved</member>
+            <member>parked</member>
+            <member>unknown</member>
+            <member>web-advertisements</member>
+          </category>
+          <service>
+            <member>any</member>
+          </service>
+          <type>
+            <ssl-forward-proxy/>
+          </type>
+          <from>
+            <member>{{trust}}</member>
+          </from>
+          <to>
+            <member>{{untrust}}</member>
+          </to>
+          <source>
+            <member>any</member>
+          </source>
+          <destination>
+            <member>any</member>
+          </destination>
+          <source-user>
+            <member>any</member>
+          </source-user>
+          <action>decrypt</action>
+          <profile>default</profile>
+          <description>Decrypt sites that are highly suspicious and have low chance
+of containing compliance data.</description>
+ </entry>
